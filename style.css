@@ -1,0 +1,155 @@
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: #E0E8FF;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    display:flex ;  
+    justify-content: center;
+    align-items: center;
+    margin: 25px; 
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px 20px;
+    overflow:hidden;
+    margin-top: 75px;
+}
+.order {
+    height: 155px;
+    text-align: center;
+    margin: 22px 0 16px 0;
+}
+.order h2 {
+    margin: 10px 0;
+    padding-top: 20px;
+}
+.order p {
+    margin: 15px 0;
+    padding: 0 50px;
+    line-height: 150%;
+    color: hsl(224, 23%, 55%);
+}
+.plan {
+    width: 67%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    background-color: #f9f8fe;
+    margin-bottom: 7.5%;
+    border-radius: 10px 10px;
+    padding: 0 5.5%;
+}
+.payment {
+    line-height: 75%;
+    color: hsl(224, 23%, 55%);
+    margin-left: 20px;
+}
+.payment h3 {
+    margin: 7% 0;
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+}
+.space{
+    width: 37%;
+}
+.change {
+    font-weight: 900;
+    justify-self: end;
+}
+.change a {
+    color: hsl(245, 75%, 52%);
+}
+.change a:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+.proceed {
+    display: flex;
+    width: 78.5%;
+    height: 50px;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px 10px;
+    -webkit-box-shadow: 0px 24px 16px 0px rgba(56, 41, 224, 0.17);
+    -moz-box-shadow: 0px 24px 16px 0px rgba(56, 41, 224, 0.17);
+    box-shadow: 0px 24px 16px 0px rgba(56, 41, 224, 0.17);
+}
+.buttons a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.proceed:hover{
+    background-color:#766CF1;
+    cursor: pointer;
+}
+.cancel {
+    display: flex;
+    height: 50px;
+    align-self: center;
+    align-items: center;
+    border-radius: 10px 10px; 
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+.cancel a {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+}
+.cancel a:hover {
+    color: black;
+}
+.attribution {
+    display: none;
+}
+@media (max-width: 400px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    .main {
+        margin-top: 45px;
+    }
+    .order {
+        height: 135px;
+    }
+    .order p {
+        padding: 0 30px;
+    }
+    .order h2 {
+        padding-top: 0;
+    }
+    .plan {
+        width: 76%;
+        height: 80px;
+        font-size: 13px;
+        padding: 0 17px;
+    }
+    .plan h3 {
+        font-size: 13px;
+    }
+    .space{
+        width: 53px;
+    }
+    .proceed {
+        width: 85%;
+    }
+    .cancel {
+        margin-top: 8px;
+        margin-bottom: 18px; 
+    }
+}
