@@ -24,7 +24,7 @@ body {
     text-align: center;
     margin: 22px 0 16px 0;
 }
-.order h2 {
+.order h1 {
     margin: 10px 0;
     padding-top: 20px;
 }
@@ -51,7 +51,7 @@ body {
     color: hsl(224, 23%, 55%);
     margin-left: 20px;
 }
-.payment h3 {
+.payment h2 {
     margin: 7% 0;
     color: black;
     font-size: 15px;
