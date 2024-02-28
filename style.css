@@ -8,21 +8,19 @@ body {
     display:flex ;  
     justify-content: center;
     align-items: center;
-    margin: 25px; 
+    min-height: 100vh;
 }
-.main {
+main {
     display: flex;
     flex-direction: column;
     width: 450px;
     background-color: white;
     border-radius: 20px 20px;
     overflow:hidden;
-    margin-top: 75px;
 }
 .order {
     height: 155px;
     text-align: center;
-    margin: 22px 0 16px 0;
 }
 .order h1 {
     margin: 10px 0;
@@ -42,23 +40,20 @@ body {
     align-self: center;
     align-items: center;
     background-color: #f9f8fe;
-    margin-bottom: 7.5%;
     border-radius: 10px 10px;
     padding: 0 5.5%;
+    gap: 20px;
 }
 .payment {
     line-height: 75%;
     color: hsl(224, 23%, 55%);
-    margin-left: 20px;
+    margin: 0 auto 0 0;
 }
-.payment h2 {
+.aplan {
     margin: 7% 0;
     color: black;
     font-size: 15px;
     font-weight: 900;
-}
-.space{
-    width: 37%;
 }
 .change {
     font-weight: 900;
@@ -71,14 +66,13 @@ body {
     color: #766CF1;
     text-decoration: none;
 }
-.buttons {
-    display: flex;
-    flex-direction: column;
-}
 .proceed {
     display: flex;
+    color: white;
+    font-weight: 700;
     width: 78.5%;
     height: 50px;
+    border: none;
     justify-content: center;
     align-self: center;
     align-items: center;
@@ -88,11 +82,7 @@ body {
     -moz-box-shadow: 0px 24px 16px 0px rgba(56, 41, 224, 0.17);
     box-shadow: 0px 24px 16px 0px rgba(56, 41, 224, 0.17);
 }
-.buttons a {
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-}
+
 .proceed:hover{
     background-color:#766CF1;
     cursor: pointer;
@@ -100,19 +90,22 @@ body {
 .cancel {
     display: flex;
     height: 50px;
-    align-self: center;
-    align-items: center;
-    border-radius: 10px 10px; 
-    margin-top: 18px;
-    margin-bottom: 32px;
-}
-.cancel a {
+    border: none;
     color: hsl(224, 23%, 55%);
     text-decoration: none;
     font-weight: 700;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px; 
+    background-color: transparent;
+    margin-top: 18px;
+    margin-bottom: 32px;
 }
-.cancel a:hover {
+
+.cancel:hover {
     color: black;
+    cursor: pointer;
 }
 .attribution {
     display: none;
@@ -121,7 +114,7 @@ body {
     body {
         background-image: url(./images/pattern-background-mobile.svg);
     }
-    .main {
+    main {
         margin-top: 45px;
     }
     .order {
@@ -130,7 +123,7 @@ body {
     .order p {
         padding: 0 30px;
     }
-    .order h2 {
+    .order h1 {
         padding-top: 0;
     }
     .plan {
@@ -139,11 +132,8 @@ body {
         font-size: 13px;
         padding: 0 17px;
     }
-    .plan h3 {
+    .plan p {
         font-size: 13px;
-    }
-    .space{
-        width: 53px;
     }
     .proceed {
         width: 85%;
